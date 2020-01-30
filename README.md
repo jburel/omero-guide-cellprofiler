@@ -7,6 +7,8 @@ This repository contains documentation and notebooks.
 
 To run the notebooks, you can either [run on mybinder.org](https://mybinder.org/v2/gh/ome/omero-guide-cellprofiler/master?filepath=notebooks) or build locally with [repo2docker](https://repo2docker.readthedocs.io/).
 
+You will need to have Docker installed and run a terminal as administritator.
+
 To build locally:
 
  * Create a virtual environment and install repo2docker from PyPI.
@@ -20,6 +22,13 @@ cd omero-guide-cellprofiler
 repo2docker .
 ```
 
+To build the Docker image:
+
+```
+docker build -t cp-guide .
+docker run -it  -p 8888:8888 cp-guide
+
+```
 
 
 This a Sphinx based documentation. 
