@@ -1,4 +1,4 @@
-name: base
+name: python2
 channels:
   - defaults
   - anaconda
@@ -6,6 +6,7 @@ channels:
   - bioconda
   - conda-forge
 dependencies:
+  - ipykernel
   - pandas=0.24
   - python=2.7
   - appdirs=1.4.*
@@ -36,6 +37,7 @@ dependencies:
   - mysql-connector-python
   - pytest<3
   - pip:
+    - https://github.com/ome/zeroc-ice-ubuntu1804/releases/download/0.1.0/zeroc_ice-3.6.4-cp27-cp27mu-linux_x86_64.whl
     - omero-py
     - cellh5
     - git+https://github.com/CellProfiler/CellProfiler.git@v3.1.9
